@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- <h1>weather Dashboard</h1>
+    <p>lorem ipsum</p> -->
+    <section id="header">
+
+       <div class="nav">
+        <h1>Weather Dashboard</h1>
+       </div>
+    </section>
+
+    <section id="main-content">
+        <main>
+            <div class="row" style="text-align: center;"> 
+                <form action="">
+                    <input type="search" id="search" placeholder="Search by city name">
+                    <button id="btn">Get Weather</button>
+                </form>
+                <div class="weather-card" id="weather"></div>
+            </div>
+            <div id="map"></div>
+        </main>
+    </section>
+
+    <section id="footer">
+        <div class="footer">
+            &copy; 2024 Weather Dashboard
+        </div>
+    </section>
+    <script src="./js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=039c012d-a652-4f51-8912-df1058106cf2&callback=initMap" async defer></script>
+</body>
+</html>
